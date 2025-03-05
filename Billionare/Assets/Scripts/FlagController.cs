@@ -6,8 +6,9 @@ public class FlagPlacement : MonoBehaviour
     public GameObject yellowFlag; // Assign a flag prefab in the inspector
     public GameObject greenFlag; // Assign a flag prefab in the inspector
     public Camera mainCamera;
+
     
-    private Dictionary<string, List<GameObject>> flags = new Dictionary<string, List<GameObject>>()
+    public Dictionary<string, List<GameObject>> flags = new Dictionary<string, List<GameObject>>()
     {
         { "Green", new List<GameObject>() },
         { "Yellow", new List<GameObject>() }

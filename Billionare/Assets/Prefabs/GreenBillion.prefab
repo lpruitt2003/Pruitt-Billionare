@@ -129,6 +129,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4dcbfee7e1c14efd9f093a294821946, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  billionColor: Green
+  acceleration: 5
+  maxSpeed: 10
+  decelerationDistance: 3
   pushForce: 10
 --- !u!58 &-5991393217418981932
 CircleCollider2D:

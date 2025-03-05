@@ -22,7 +22,7 @@ AssetImportWorker1
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-53987
+54894
 -job-worker-count
 5
 -background-job-worker-count
@@ -66,12 +66,12 @@ Successfully changed project path to: /Users/loganpruitt/Documents/Game Developm
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [140704545528640]  Target information:
+Player connection [140704630221632]  Target information:
 
-Player connection [140704545528640]  * "[IP] 192.168.0.162 [Port] 0 [Flags] 2 [Guid] 464486400 [EditorId] 464486400 [Version] 1048832 [Id] OSXEditor(0,CORE-C02G7BGMMD6R) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+Player connection [140704630221632]  * "[IP] 192.168.0.162 [Port] 0 [Flags] 2 [Guid] 2737637585 [EditorId] 2737637585 [Version] 1048832 [Id] OSXEditor(0,CORE-C02G7BGMMD6R) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
 
-Player connection [140704545528640] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [140704545528640] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [140704630221632] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [140704630221632] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 5
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -83,7 +83,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 1134.01 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 16.17 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.0.36f1 (9fe3b5f71dbb)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/6000.0.36f1/Unity.app/Contents/Resources/UnitySubsystems
@@ -99,45 +99,45 @@ Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/6000.0.36f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/6000.0.36f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
 Mono config path = '/Applications/Unity/Hub/Editor/6000.0.36f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56186
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56429
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/6000.0.36f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/6000.0.36f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Registered in 0.003763 seconds.
-- Loaded All Assemblies, in 13.867 seconds
+Registered in 0.008779 seconds.
+- Loaded All Assemblies, in  0.904 seconds
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.905 seconds
-Domain Reload Profiling: 14772ms
-	BeginReloadAssembly (12665ms)
+- Finished resetting the current domain, in  0.839 seconds
+Domain Reload Profiling: 1743ms
+	BeginReloadAssembly (304ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (2ms)
-	RebuildCommonClasses (265ms)
-	RebuildNativeTypeToScriptingClass (25ms)
-	initialDomainReloadingComplete (106ms)
-	LoadAllAssembliesAndSetupDomain (804ms)
-		LoadAssemblies (12692ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (96ms)
+	RebuildNativeTypeToScriptingClass (29ms)
+	initialDomainReloadingComplete (104ms)
+	LoadAllAssembliesAndSetupDomain (371ms)
+		LoadAssemblies (306ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (769ms)
-			TypeCache.Refresh (766ms)
-				TypeCache.ScanAssembly (672ms)
+		AnalyzeDomain (363ms)
+			TypeCache.Refresh (359ms)
+				TypeCache.ScanAssembly (331ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (906ms)
+	FinalizeReload (839ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (795ms)
+		SetupLoadedEditorAssemblies (744ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (160ms)
-			SetLoadedEditorAssemblies (10ms)
+			InitializePlatformSupportModulesInManaged (93ms)
+			SetLoadedEditorAssemblies (8ms)
 			BeforeProcessingInitializeOnLoad (127ms)
-			ProcessInitializeOnLoadAttributes (329ms)
-			ProcessInitializeOnLoadMethodAttributes (169ms)
+			ProcessInitializeOnLoadAttributes (384ms)
+			ProcessInitializeOnLoadMethodAttributes (132ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -146,67 +146,1429 @@ Domain Reload Profiling: 14772ms
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in 17.488 seconds
-Refreshing native plugins compatible for Editor in 12.82 ms, found 3 plugins.
+- Loaded All Assemblies, in  2.741 seconds
+Refreshing native plugins compatible for Editor in 6.75 ms, found 3 plugins.
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  3.310 seconds
-Domain Reload Profiling: 20789ms
-	BeginReloadAssembly (574ms)
+- Finished resetting the current domain, in  2.043 seconds
+Domain Reload Profiling: 4776ms
+	BeginReloadAssembly (380ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (15ms)
+		DisableScriptedObjects (12ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (86ms)
-	RebuildCommonClasses (126ms)
-	RebuildNativeTypeToScriptingClass (32ms)
-	initialDomainReloadingComplete (173ms)
-	LoadAllAssembliesAndSetupDomain (16572ms)
-		LoadAssemblies (15786ms)
+		CreateAndSetChildDomain (76ms)
+	RebuildCommonClasses (109ms)
+	RebuildNativeTypeToScriptingClass (27ms)
+	initialDomainReloadingComplete (94ms)
+	LoadAllAssembliesAndSetupDomain (2123ms)
+		LoadAssemblies (1731ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (1171ms)
-			TypeCache.Refresh (956ms)
-				TypeCache.ScanAssembly (877ms)
-			BuildScriptInfoCaches (176ms)
-			ResolveRequiredComponents (30ms)
-	FinalizeReload (3310ms)
+		AnalyzeDomain (616ms)
+			TypeCache.Refresh (460ms)
+				TypeCache.ScanAssembly (426ms)
+			BuildScriptInfoCaches (124ms)
+			ResolveRequiredComponents (24ms)
+	FinalizeReload (2044ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (2897ms)
+		SetupLoadedEditorAssemblies (1708ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (10ms)
-			SetLoadedEditorAssemblies (13ms)
-			BeforeProcessingInitializeOnLoad (431ms)
-			ProcessInitializeOnLoadAttributes (1969ms)
-			ProcessInitializeOnLoadMethodAttributes (473ms)
-			AfterProcessingInitializeOnLoad (1ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			SetLoadedEditorAssemblies (11ms)
+			BeforeProcessingInitializeOnLoad (264ms)
+			ProcessInitializeOnLoadAttributes (1137ms)
+			ProcessInitializeOnLoadMethodAttributes (286ms)
+			AfterProcessingInitializeOnLoad (2ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (9ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
 Launching external process: /Applications/Unity/Hub/Editor/6000.0.36f1/Unity.app/Contents/Tools/UnityShaderCompiler
-Launched and connected shader compiler UnityShaderCompiler after 0.33 seconds
-Refreshing native plugins compatible for Editor in 24.91 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler after 0.14 seconds
+Refreshing native plugins compatible for Editor in 7.22 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 206 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6536 unused Assets / (4.2 MB). Loaded Objects now: 7235.
-Memory consumption went from 176.5 MB to 172.4 MB.
-Total: 15.170805 ms (FindLiveObjects: 1.173974 ms CreateObjectMapping: 1.814809 ms MarkObjects: 8.871416 ms  DeleteObjects: 3.308708 ms)
+Unloading 6536 unused Assets / (4.4 MB). Loaded Objects now: 7235.
+Memory consumption went from 176.4 MB to 171.9 MB.
+Total: 16.370570 ms (FindLiveObjects: 0.903768 ms CreateObjectMapping: 1.859137 ms MarkObjects: 9.887958 ms  DeleteObjects: 3.718129 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 85615.746311 seconds.
-  path: Assets/Scripts/FlagController.cs
-  artifactKey: Guid(c0be161346cd44e919481ac1d05aa8a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/FlagController.cs using Guid(c0be161346cd44e919481ac1d05aa8a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '14e5dbbd97534945cc5bee3e1a54fda3') in 0.007241992 seconds
+  Time since last request: 28921.675102 seconds.
+  path: Assets/SpriteSheets/kenney_space-shooter-redux/PNG/Lasers/laserRed07.png
+  artifactKey: Guid(23aa8a870132440f9be4bbf0c7346c77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_space-shooter-redux/PNG/Lasers/laserRed07.png using Guid(23aa8a870132440f9be4bbf0c7346c77) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7baf9c6ac0dba50922bd28d0fe8e819e') in 0.197197687 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000074 seconds.
+  path: Assets/SpriteSheets/kenney_space-shooter-redux/PNG/Lasers/laserGreen11.png
+  artifactKey: Guid(56bc0f4378cf54ec0b8e633a9b5cf12e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_space-shooter-redux/PNG/Lasers/laserGreen11.png using Guid(56bc0f4378cf54ec0b8e633a9b5cf12e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f1c741d31818b5939b44650dfbc9735e') in 0.013524562 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000106 seconds.
+  path: Assets/SpriteSheets/kenney_space-shooter-redux/PNG/Lasers/laserBlue12.png
+  artifactKey: Guid(3c7869ec6d9f9413883e077c4b127694) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_space-shooter-redux/PNG/Lasers/laserBlue12.png using Guid(3c7869ec6d9f9413883e077c4b127694) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '37ae32be49f50e61e47c62391c90f48b') in 0.015128576 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000090 seconds.
+  path: Assets/SpriteSheets/kenney_space-shooter-redux/PNG/Lasers/laserBlue01.png
+  artifactKey: Guid(e837761c9fc7d46f790bc1b182e73333) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_space-shooter-redux/PNG/Lasers/laserBlue01.png using Guid(e837761c9fc7d46f790bc1b182e73333) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8212abfa4d73fd54c366b5410191906e') in 0.014220901 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000072 seconds.
+  path: Assets/SpriteSheets/kenney_space-shooter-redux/PNG/Lasers/laserRed05.png
+  artifactKey: Guid(21eef79d6650448c9b396746bf4979a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_space-shooter-redux/PNG/Lasers/laserRed05.png using Guid(21eef79d6650448c9b396746bf4979a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '937c025f4058d8e9c5e7e6ecf41b775a') in 0.015376976 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/SpriteSheets/kenney_space-shooter-redux/PNG/Lasers/laserGreen12.png
+  artifactKey: Guid(2aa4cec293d05448a852de2ebe1e6c64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_space-shooter-redux/PNG/Lasers/laserGreen12.png using Guid(2aa4cec293d05448a852de2ebe1e6c64) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '64d2d8b5e7a68499f280ac1e81155989') in 0.015093876 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000100 seconds.
+  path: Assets/SpriteSheets/kenney_space-shooter-redux/PNG/Lasers/laserRed04.png
+  artifactKey: Guid(825fb13ddabb94f239fc806ac9255864) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_space-shooter-redux/PNG/Lasers/laserRed04.png using Guid(825fb13ddabb94f239fc806ac9255864) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2f1c07b7e65b7471b09d4dc48e00afcb') in 0.014843992 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000123 seconds.
+  path: Assets/SpriteSheets/kenney_space-shooter-redux/PNG/Lasers
+  artifactKey: Guid(dd06be43ac9cf4cd793e28083daa67b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_space-shooter-redux/PNG/Lasers using Guid(dd06be43ac9cf4cd793e28083daa67b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '054bd81e3da5356ebeea3d3b908dedd0') in 0.000682586 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000121 seconds.
+  path: Assets/SpriteSheets/kenney_space-shooter-redux/PNG/Lasers/laserRed11.png
+  artifactKey: Guid(68954d1c46d7e480db5b356a90a05869) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_space-shooter-redux/PNG/Lasers/laserRed11.png using Guid(68954d1c46d7e480db5b356a90a05869) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9ce3f090fee2d141d6f21d5e97d6ad70') in 0.015754906 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000141 seconds.
+  path: Assets/SpriteSheets/kenney_space-shooter-redux/PNG/Lasers/laserGreen07.png
+  artifactKey: Guid(a0ed8157089084b7bbd4726635998841) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_space-shooter-redux/PNG/Lasers/laserGreen07.png using Guid(a0ed8157089084b7bbd4726635998841) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '22192018885717e9509d7d11f678ecab') in 0.013599883 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Assets/SpriteSheets/kenney_space-shooter-redux/PNG/Lasers/laserBlue06.png
+  artifactKey: Guid(8c22868f6654d4973a68822544e90976) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_space-shooter-redux/PNG/Lasers/laserBlue06.png using Guid(8c22868f6654d4973a68822544e90976) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '62aac2ed3f98052b0fe7da6e230e4e70') in 0.012673951 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000123 seconds.
+  path: Assets/SpriteSheets/kenney_space-shooter-redux/PNG/Lasers/laserBlue05.png
+  artifactKey: Guid(b71cc6103941f41d0b7de47e92e710a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_space-shooter-redux/PNG/Lasers/laserBlue05.png using Guid(b71cc6103941f41d0b7de47e92e710a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c76e0598aec01ea4e47858b48aafea63') in 0.012169892 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000079 seconds.
-  path: Assets/Scripts/BillionController.cs
-  artifactKey: Guid(a4dcbfee7e1c14efd9f093a294821946) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/BillionController.cs using Guid(a4dcbfee7e1c14efd9f093a294821946) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1c3322cd7326d1f74d86706bba916ade') in 0.00058224 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+  path: Assets/SpriteSheets/kenney_space-shooter-redux/PNG/Lasers/laserGreen01.png
+  artifactKey: Guid(c7db5da3bb2764a09bbb2cb0667b820c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_space-shooter-redux/PNG/Lasers/laserGreen01.png using Guid(c7db5da3bb2764a09bbb2cb0667b820c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '88197fc2432cf8374af1a9ad05cd37b6') in 0.014413785 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
-AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+========================================================================
+Received Import Request.
+  Time since last request: 0.000088 seconds.
+  path: Assets/SpriteSheets/kenney_space-shooter-redux/PNG/Lasers/laserGreen15.png
+  artifactKey: Guid(033b1222b2e114a89ade93a4e0921c88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_space-shooter-redux/PNG/Lasers/laserGreen15.png using Guid(033b1222b2e114a89ade93a4e0921c88) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f62f3e8263c44fb49c70a0413a34ed96') in 0.014460638 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000096 seconds.
+  path: Assets/SpriteSheets/kenney_space-shooter-redux/PNG/Lasers/laserBlue15.png
+  artifactKey: Guid(4ca64a77c7d3f4b7dbfe2a2c63a54673) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_space-shooter-redux/PNG/Lasers/laserBlue15.png using Guid(4ca64a77c7d3f4b7dbfe2a2c63a54673) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '78a2f308b1eaa245e9b2ef595c11c1ba') in 0.016836541 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000089 seconds.
+  path: Assets/SpriteSheets/kenney_space-shooter-redux/PNG/Lasers/laserBlue10.png
+  artifactKey: Guid(4c80153adc625467cadfff2ccacdec9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_space-shooter-redux/PNG/Lasers/laserBlue10.png using Guid(4c80153adc625467cadfff2ccacdec9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e5c310f3fac1db3f4f57febf051232ff') in 0.015590726 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/SpriteSheets/kenney_space-shooter-redux/PNG/Lasers/laserRed16.png
+  artifactKey: Guid(bd3f02cd2843844f9a4e27bf2fab7818) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_space-shooter-redux/PNG/Lasers/laserRed16.png using Guid(bd3f02cd2843844f9a4e27bf2fab7818) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '711fdb4ad9db5d1f57a1ccd24def2189') in 0.012951933 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.130076 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_74.asset
+  artifactKey: Guid(f88fe1fa842414b57aeb9ab349aa0abc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_74.asset using Guid(f88fe1fa842414b57aeb9ab349aa0abc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1be0c1a3e7d26c25f73df00869a6aa66') in 0.047761088 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_77.asset
+  artifactKey: Guid(591741663c068485cae7ffcdf37aa8d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_77.asset using Guid(591741663c068485cae7ffcdf37aa8d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6f6ac7a4363e4fe7a3ace24f08a0904c') in 0.039010794 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_93.asset
+  artifactKey: Guid(cef8eae17d3114d3ab60ca8f280ac86f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_93.asset using Guid(cef8eae17d3114d3ab60ca8f280ac86f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '481a6c329f56600e17d36dc56e02dc06') in 0.041068838 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_136.asset
+  artifactKey: Guid(21d38d1cb13cd42b987b43a9dee941d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_136.asset using Guid(21d38d1cb13cd42b987b43a9dee941d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f3110747c19a6d8b9e98792ccecb5b1a') in 0.040374419 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000076 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_121.asset
+  artifactKey: Guid(2834e4b7aaf4a42b58f941e0922ee578) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_121.asset using Guid(2834e4b7aaf4a42b58f941e0922ee578) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7bf53dd8376013ebf7e445c750eceeaa') in 0.030413381 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_134.asset
+  artifactKey: Guid(e5009e061bdf24bff93715418c6238fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_134.asset using Guid(e5009e061bdf24bff93715418c6238fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7931b342588f39d854b66eb83cba7690') in 0.033889983 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_98.asset
+  artifactKey: Guid(5717d587b940f46fd817bd0a1b387526) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_98.asset using Guid(5717d587b940f46fd817bd0a1b387526) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1324d08940a5bc89547e94e2bd0b2c3c') in 0.044874942 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000103 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_189.asset
+  artifactKey: Guid(50b1f7a1fddb2401bbb1e13bed4bf5a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_189.asset using Guid(50b1f7a1fddb2401bbb1e13bed4bf5a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '767854f540ef51a815d1d9da6c4396e8') in 0.038270516 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000084 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_81.asset
+  artifactKey: Guid(2fcdf3a3be20a45c48149b20d43ede05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_81.asset using Guid(2fcdf3a3be20a45c48149b20d43ede05) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f9bc3fdee35f4af9adb486b8981e97d1') in 0.030686577 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_197.asset
+  artifactKey: Guid(d0fded8f38de84212bbffd211d2ea2d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_197.asset using Guid(d0fded8f38de84212bbffd211d2ea2d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c742923aa08b956e5d206b578d9b6c5b') in 0.030333042 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000083 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_79.asset
+  artifactKey: Guid(218e242524b7f46b8b8df0be04bbee16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_79.asset using Guid(218e242524b7f46b8b8df0be04bbee16) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '16cc3bae7c00f0da3ac086b6088f0b9b') in 0.031386799 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000081 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_84.asset
+  artifactKey: Guid(e91155a461da847748bd3948e652a4aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_84.asset using Guid(e91155a461da847748bd3948e652a4aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6cbc4a8d8966e8dfac0308b2f13060fe') in 0.03409331 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000084 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_103.asset
+  artifactKey: Guid(244eebb1ecb1b4d0da9a618d7d2dd196) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_103.asset using Guid(244eebb1ecb1b4d0da9a618d7d2dd196) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '270f05fb3a7f5700fc5208f8ae758dfa') in 0.036377311 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000082 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_205.asset
+  artifactKey: Guid(5dbaacafa13e14c7da8dd2bd8d229bfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_205.asset using Guid(5dbaacafa13e14c7da8dd2bd8d229bfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9c66cf9a93c55e46fa2f8ac6d431b812') in 0.031807952 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000141 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_149.asset
+  artifactKey: Guid(ec240f2fc1aec4aab9bdbaa7d600b1a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_149.asset using Guid(ec240f2fc1aec4aab9bdbaa7d600b1a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4bab55e5b5ac0fda3dedb8cc40ade060') in 0.032883508 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_89.asset
+  artifactKey: Guid(1bc9d374e50c24029885f42365a817c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_89.asset using Guid(1bc9d374e50c24029885f42365a817c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '41349699c94f391aa1d2550a67f9fc46') in 0.035604943 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000081 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_143.asset
+  artifactKey: Guid(0577f048c419543ad8328c6441830d81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_143.asset using Guid(0577f048c419543ad8328c6441830d81) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b9754f5e9d4941d607572107c9af14b2') in 0.028965233 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_151.asset
+  artifactKey: Guid(adaed6300b591477db208c94e99050d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_151.asset using Guid(adaed6300b591477db208c94e99050d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bbea1958e9cfa730eaff9bd837b85135') in 0.031691967 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000074 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_99.asset
+  artifactKey: Guid(54c30f3487b194b449e72cf6d10ea49b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_99.asset using Guid(54c30f3487b194b449e72cf6d10ea49b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2c15b5db99b6f5666bbc655a5df2db27') in 0.02955106 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_200.asset
+  artifactKey: Guid(9bb3e7e4dc5834d889615179b91e2478) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_200.asset using Guid(9bb3e7e4dc5834d889615179b91e2478) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9257a459997032992f974bdf08e2d2ff') in 0.032787665 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_115.asset
+  artifactKey: Guid(5aac13ab22f794bdaa0e83038d225b62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_115.asset using Guid(5aac13ab22f794bdaa0e83038d225b62) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f2604debd1df093e755d2d1bd498b60a') in 0.031959269 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_108.asset
+  artifactKey: Guid(fedba8cd9dab74282910df8db31d919f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_108.asset using Guid(fedba8cd9dab74282910df8db31d919f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '808accdcaac8272f910950de2674433f') in 0.031963433 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_141.asset
+  artifactKey: Guid(c1a0aa09241ea4ea98285e977436fd0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_141.asset using Guid(c1a0aa09241ea4ea98285e977436fd0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b2bbe14b21a38302938e1fe56683afc4') in 0.030117213 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_191.asset
+  artifactKey: Guid(a037e81b738cb4bcb9c8f516cc03b456) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_191.asset using Guid(a037e81b738cb4bcb9c8f516cc03b456) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c03ee4ce78ac5e9bd9d1d01299fe3bc0') in 0.033420182 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_175.asset
+  artifactKey: Guid(8688527cf86634a598cd146fbf1b29d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_175.asset using Guid(8688527cf86634a598cd146fbf1b29d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3860250c85a893e1b2bc85ecc9d6be7b') in 0.032792701 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000088 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_165.asset
+  artifactKey: Guid(6c1994e9b57a249a9a068000c4ec0ec8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_165.asset using Guid(6c1994e9b57a249a9a068000c4ec0ec8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e4531a3383a153f2a70b60fffa723bcf') in 0.029580292 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_202.asset
+  artifactKey: Guid(5782cd262977d46bcb8349b5d44b5be1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_202.asset using Guid(5782cd262977d46bcb8349b5d44b5be1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f0aa612929a2695e4a27f83821a8003c') in 0.032661274 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000080 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_111.asset
+  artifactKey: Guid(fa17066a3735447e59e3d3c07bf2bfcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_111.asset using Guid(fa17066a3735447e59e3d3c07bf2bfcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9f343598d848acff8101fd7f2b7017c7') in 0.029526375 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_92.asset
+  artifactKey: Guid(952af590b216c473f8a1be8031f2300e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_92.asset using Guid(952af590b216c473f8a1be8031f2300e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '90b15608715c43412900084c62250c75') in 0.030222851 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_178.asset
+  artifactKey: Guid(5916caf863eb04a5ea87769b34c9fdf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_178.asset using Guid(5916caf863eb04a5ea87769b34c9fdf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '614d42b3fb12594be8e412bc20ad7dce') in 0.031675874 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_116.asset
+  artifactKey: Guid(28198781551884e33b6a8d5dbe78a5de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_116.asset using Guid(28198781551884e33b6a8d5dbe78a5de) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0b67231fef60081c43935dbef8b6bfcd') in 0.030471991 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_188.asset
+  artifactKey: Guid(09e92f8a7e75640c3af0b6930224cbd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_188.asset using Guid(09e92f8a7e75640c3af0b6930224cbd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c16a875c892744fa4f033305183d6bdf') in 0.030182084 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000083 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_117.asset
+  artifactKey: Guid(d3e10acc89b704a448b5df9f2035e72c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_117.asset using Guid(d3e10acc89b704a448b5df9f2035e72c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'abbb0ce600bdfc898b27105de7cfc68f') in 0.029962135 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000079 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_110.asset
+  artifactKey: Guid(32cb9e721fafa4d1eb748993076f1c25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_110.asset using Guid(32cb9e721fafa4d1eb748993076f1c25) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '04f06e62fd250e9d40f13d643436ea0f') in 0.032775634 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000074 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_198.asset
+  artifactKey: Guid(a519d03b24d304a76b3ce9e457d0f45f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_198.asset using Guid(a519d03b24d304a76b3ce9e457d0f45f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '60c1ee1598deaf7e00bc509f563f11ce') in 0.030391217 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000075 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_195.asset
+  artifactKey: Guid(47d675a2bff724639bc2178722c9b2d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_195.asset using Guid(47d675a2bff724639bc2178722c9b2d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6e317f2dc6e1ff729012d788267357c9') in 0.031274855 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000080 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_76.asset
+  artifactKey: Guid(6065be87b1e65439fb1a37414519db1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_76.asset using Guid(6065be87b1e65439fb1a37414519db1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8fc75bc71e9f011019bc583304034805') in 0.032725928 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_85.asset
+  artifactKey: Guid(a1fac11784bd24757b1c8c105d661a83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_85.asset using Guid(a1fac11784bd24757b1c8c105d661a83) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd988c32acfc71e505a15991fc19ede92') in 0.030304183 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000074 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_183.asset
+  artifactKey: Guid(9b28fa35ae148488b9d0d8cfa9741692) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_183.asset using Guid(9b28fa35ae148488b9d0d8cfa9741692) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1eee615d09cfc0a630c93d8b46c147a4') in 0.03230096 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000079 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_102.asset
+  artifactKey: Guid(f4af07ce44ed54455bbb2d87fdddb6d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_102.asset using Guid(f4af07ce44ed54455bbb2d87fdddb6d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0a7202c94b3f329867f43ad76e46e8c2') in 0.031615331 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000090 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_172.asset
+  artifactKey: Guid(ce42e84a82df04bb68522b0a933a39c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_172.asset using Guid(ce42e84a82df04bb68522b0a933a39c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9c9c877cdeb1109251aec2072af558b9') in 0.031462688 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_163.asset
+  artifactKey: Guid(b3889fc17b52046a0997d5e446c3a0a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_163.asset using Guid(b3889fc17b52046a0997d5e446c3a0a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '097d39817b68f66992846e591e6f1afa') in 0.031538335 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000070 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_125.asset
+  artifactKey: Guid(8a190546b0dae42689e8c2b5afaf4098) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_125.asset using Guid(8a190546b0dae42689e8c2b5afaf4098) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3ca689b80fafa0a0de3d849e5b07dff7') in 0.031181237 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_166.asset
+  artifactKey: Guid(04586744a71144fa2b333a8036bb0d75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_166.asset using Guid(04586744a71144fa2b333a8036bb0d75) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '49797a2fe029b4d0cca5af1b0b9a7039') in 0.031772568 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000111 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_119.asset
+  artifactKey: Guid(646c629b627af4ddf836241606f8f161) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_119.asset using Guid(646c629b627af4ddf836241606f8f161) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f065258988747507e554840a3b942ed8') in 0.032700207 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.028740 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_209.asset
+  artifactKey: Guid(dc42e85a8a6624a96b5bba5a37423f36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_209.asset using Guid(dc42e85a8a6624a96b5bba5a37423f36) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a73e44c1197fbf5b45d038c14fcccd12') in 0.037924937 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_210.asset
+  artifactKey: Guid(8f695555dfbdd4330bd78410b1bf4e71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_210.asset using Guid(8f695555dfbdd4330bd78410b1bf4e71) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '689d8ebcf71b196bad9a6e9a8405681d') in 0.032560395 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000099 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_239.asset
+  artifactKey: Guid(ccac178b409ba4f4c990e77acacb6bb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_239.asset using Guid(ccac178b409ba4f4c990e77acacb6bb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ea2a11196f8c2ff8878c78db026616e2') in 0.031641551 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_256.asset
+  artifactKey: Guid(8aa91971534e64e2296706584fc36b36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_256.asset using Guid(8aa91971534e64e2296706584fc36b36) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3c1294fcc92e09fb4eb73731a7ae3ebf') in 0.03075999 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_250.asset
+  artifactKey: Guid(37cbc4e5bf07940a1994915bc9e9d1b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_250.asset using Guid(37cbc4e5bf07940a1994915bc9e9d1b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ac86b608c85ae00ff1caac619c7b4dc0') in 0.030509074 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_217.asset
+  artifactKey: Guid(1d2ba17dda0cc4d8ea7e69b46a8b0a25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_217.asset using Guid(1d2ba17dda0cc4d8ea7e69b46a8b0a25) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7e39a711be38bdca35c63d628f45a73a') in 0.029688553 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000087 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_219.asset
+  artifactKey: Guid(1205d73c556634003bde0a37ce6ca7ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_219.asset using Guid(1205d73c556634003bde0a37ce6ca7ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '07a6053f3184b3ea9303c27dbbab713b') in 0.03401138 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000079 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_265.asset
+  artifactKey: Guid(216b731e9262846d99822fdf19665937) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_265.asset using Guid(216b731e9262846d99822fdf19665937) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'aacf1120e7ec3076b9a4b10b2da70087') in 0.033803183 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_288.asset
+  artifactKey: Guid(9e5ccbb05af464ee5bdce79ca056bde4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_288.asset using Guid(9e5ccbb05af464ee5bdce79ca056bde4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fd6a38cd256a35ecd9c979b9c1629651') in 0.037543847 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000075 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_286.asset
+  artifactKey: Guid(7dbd4616a214f4f078bb538a7fd6a32d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_286.asset using Guid(7dbd4616a214f4f078bb538a7fd6a32d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '62e148ffdba55aa93582cc5566ceba73') in 0.049655956 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000082 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_254.asset
+  artifactKey: Guid(980c1249a7c9d4ffb8c72c74b91208d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_254.asset using Guid(980c1249a7c9d4ffb8c72c74b91208d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dff15051b065ea945b426da084f1ea06') in 0.033550733 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000070 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_266.asset
+  artifactKey: Guid(903af270242f744c0b7cb683efeda95c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_266.asset using Guid(903af270242f744c0b7cb683efeda95c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a9e5a9c0672afa0ec43a188e523b2b5f') in 0.030384837 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_224.asset
+  artifactKey: Guid(9595c6c025d8947aa8db4332687a8ef5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_224.asset using Guid(9595c6c025d8947aa8db4332687a8ef5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9236d73c568747577f0335e33066e7a5') in 0.030559277 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000079 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_274.asset
+  artifactKey: Guid(3387b0fbf4eb14a2abf4fbe17bece750) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_274.asset using Guid(3387b0fbf4eb14a2abf4fbe17bece750) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '54dd91596e29bdbfa6c1b300466bebe5') in 0.031493262 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_237.asset
+  artifactKey: Guid(2c81bc9c07d4247e39d5fb4a16e68043) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_237.asset using Guid(2c81bc9c07d4247e39d5fb4a16e68043) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '02d8a325b5ef28defe96282b45959baa') in 0.03104172 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_227.asset
+  artifactKey: Guid(2f220cc9daf4b44ec81f9f3ae9879dae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_227.asset using Guid(2f220cc9daf4b44ec81f9f3ae9879dae) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '37a4fd1eff5d3560b19f511e36194284') in 0.030510048 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_241.asset
+  artifactKey: Guid(d9aef61eede94486187e49f76719de48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_241.asset using Guid(d9aef61eede94486187e49f76719de48) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e1c8cdf25ba71a7cfcf1b4deada05086') in 0.030560299 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_285.asset
+  artifactKey: Guid(490ed59a998eb46dda7d437592bf3098) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_285.asset using Guid(490ed59a998eb46dda7d437592bf3098) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e4f4d1e12f3279e522978dfaa57a826e') in 0.031291494 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_263.asset
+  artifactKey: Guid(fc115fa47076e4691a117faee118821c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_263.asset using Guid(fc115fa47076e4691a117faee118821c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e80558d12e2fdfb3342a01433ea556f9') in 0.031635402 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_260.asset
+  artifactKey: Guid(15d99d7dda1a6474fb6139581f6f0d56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_260.asset using Guid(15d99d7dda1a6474fb6139581f6f0d56) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd38f6ea49eb29765c18415f555599638') in 0.031902014 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_246.asset
+  artifactKey: Guid(b5d0c9fbe1ac94d00b0ca98d24fc051a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_246.asset using Guid(b5d0c9fbe1ac94d00b0ca98d24fc051a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '116092ffed293cf51753d1883c83b179') in 0.029714932 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_278.asset
+  artifactKey: Guid(a4936f76486c34a53ba0b94825ffc448) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_278.asset using Guid(a4936f76486c34a53ba0b94825ffc448) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4c150344c4cba60575184d6d98a74765') in 0.029535421 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000084 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_229.asset
+  artifactKey: Guid(b84f55ea5c1314f97a589e6ad7c39c0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_229.asset using Guid(b84f55ea5c1314f97a589e6ad7c39c0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '76bed5808e38371d9389a74f1fd3127a') in 0.031191274 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_294.asset
+  artifactKey: Guid(e32ed89cb3d5d42068d076ad9b95b012) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_294.asset using Guid(e32ed89cb3d5d42068d076ad9b95b012) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '497f5ca12d7b7b3ad1c400d09b882430') in 0.030864158 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000075 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_214.asset
+  artifactKey: Guid(2c90cb7abc6ff4fc6adea310778ab96a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_214.asset using Guid(2c90cb7abc6ff4fc6adea310778ab96a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c646816e77a6414893d7064636f39e82') in 0.03009344 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_277.asset
+  artifactKey: Guid(430b6079ae22d4995b1a800444cb379e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_277.asset using Guid(430b6079ae22d4995b1a800444cb379e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'efd891c3f7bf39b748852336fa83242a') in 0.030168654 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000072 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_257.asset
+  artifactKey: Guid(ad4ca599c56b2430982a9e440d18c0d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_257.asset using Guid(ad4ca599c56b2430982a9e440d18c0d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a858568c032d07c28ead10f3e5594405') in 0.029995537 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000075 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_212.asset
+  artifactKey: Guid(4ee803c304c084fc795d7c2720b594c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_212.asset using Guid(4ee803c304c084fc795d7c2720b594c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '14170657a26357f8d240d3edec921cdb') in 0.032361599 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000104 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_248.asset
+  artifactKey: Guid(269bcc5e3cec84911871a220a8433ca6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_248.asset using Guid(269bcc5e3cec84911871a220a8433ca6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2ee2626cd672638b845169282a7b26e6') in 0.031226716 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_233.asset
+  artifactKey: Guid(2952a83b579514093b3d53d3fa69f71d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_233.asset using Guid(2952a83b579514093b3d53d3fa69f71d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8a61aa432725b1787e441003511c294a') in 0.033475358 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.502995 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_299.asset
+  artifactKey: Guid(98a909c9bc78246f7bd07ef06cb62999) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_299.asset using Guid(98a909c9bc78246f7bd07ef06cb62999) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4ad29412e5133a5b2df4a4b6e5c5d1e4') in 0.037579676 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_307.asset
+  artifactKey: Guid(1f43876639c934d89b06ef1696660eeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_307.asset using Guid(1f43876639c934d89b06ef1696660eeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b4515a60a9f2562ffcae6b0b4d990eef') in 0.03276131 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000076 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_310.asset
+  artifactKey: Guid(74f16397364cf4cb2b91c3b8a8b8d131) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_310.asset using Guid(74f16397364cf4cb2b91c3b8a8b8d131) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '560ed11238bd4d4db495cde757df701c') in 0.033419584 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_325.asset
+  artifactKey: Guid(617ccad65727f43fdbd4a9c12e4262ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_325.asset using Guid(617ccad65727f43fdbd4a9c12e4262ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '75119333fb8970ef53b4aad584b32840') in 0.03494917 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_319.asset
+  artifactKey: Guid(b6a513201e08d48de8f0d41294735025) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_319.asset using Guid(b6a513201e08d48de8f0d41294735025) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00dbf4a566ed76cd28304ae807d123a7') in 0.033748236 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_313.asset
+  artifactKey: Guid(27f66ee498b504732a72f6d7cb51efb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_313.asset using Guid(27f66ee498b504732a72f6d7cb51efb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '273769d2a005c2834a687e913ee18612') in 0.030139022 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_336.asset
+  artifactKey: Guid(744ae64dae73e40e9aa5287abf0df73d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_336.asset using Guid(744ae64dae73e40e9aa5287abf0df73d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1f445b727b903567aa2d39ca3bbc578c') in 0.031027253 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000102 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_329.asset
+  artifactKey: Guid(8416df41b220547f6afa75eafcbf0836) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_329.asset using Guid(8416df41b220547f6afa75eafcbf0836) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd9b5aca839674740a28c43f52f6c52ad') in 0.031672641 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000080 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_355.asset
+  artifactKey: Guid(50a40eb2374a24968befdd4720cb82fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_355.asset using Guid(50a40eb2374a24968befdd4720cb82fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7cb9b68a54e89bf4efbe7c36009a943e') in 0.030484012 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_334.asset
+  artifactKey: Guid(e6c2e57f95f5c42a4a983a351ca840e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_334.asset using Guid(e6c2e57f95f5c42a4a983a351ca840e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00765f2cfe3e11118dd81a2387e41c40') in 0.031025534 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000072 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_335.asset
+  artifactKey: Guid(de626074837a94db6a6988ee5c8fcbeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_335.asset using Guid(de626074837a94db6a6988ee5c8fcbeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f63c150eb9c4d15d2b8fde6295e15c6b') in 0.032473458 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_359.asset
+  artifactKey: Guid(f3c661926b89c470a97ed83e8cbf9d30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_359.asset using Guid(f3c661926b89c470a97ed83e8cbf9d30) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '35bb487b75ddec5031d64b554f1d498a') in 0.030525746 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000076 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_371.asset
+  artifactKey: Guid(fc7e0a0bc40fc43aeb8a1eea94c0265f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_371.asset using Guid(fc7e0a0bc40fc43aeb8a1eea94c0265f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '43d490e0002573c71a298b83733738d6') in 0.031986393 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000080 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_364.asset
+  artifactKey: Guid(3a1a2d4fa6f2640ac8631c3b1e628c60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_364.asset using Guid(3a1a2d4fa6f2640ac8631c3b1e628c60) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e4d90c70651e93fed9e65adaa5ddefcb') in 0.033242548 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000095 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_362.asset
+  artifactKey: Guid(f47c577c362fb40769bc9ca29549793a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_362.asset using Guid(f47c577c362fb40769bc9ca29549793a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e583f502d75048a2b97127f6e1349e8c') in 0.029743286 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_363.asset
+  artifactKey: Guid(95ca37731c29f42179d229f49084362a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_363.asset using Guid(95ca37731c29f42179d229f49084362a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '706a94a5defccf873904c3ea3dcf7b5b') in 0.029762539 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000093 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_352.asset
+  artifactKey: Guid(5f4224a3f8324478bb4c92c42e4431e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_352.asset using Guid(5f4224a3f8324478bb4c92c42e4431e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '10281d6eff58fc318a3110c0449e0948') in 0.047909133 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000090 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_321.asset
+  artifactKey: Guid(6885ece050d69462fa331fd83deb45b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_321.asset using Guid(6885ece050d69462fa331fd83deb45b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0181c1018f4b1d1dcd43c82188f97c1e') in 0.03251429 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_314.asset
+  artifactKey: Guid(c734d95afdbb143ac9d118cc339276a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_314.asset using Guid(c734d95afdbb143ac9d118cc339276a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a3e262403fbf206eba7ba7dd75e4ceb3') in 0.031642579 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_339.asset
+  artifactKey: Guid(49fb404f61b07476487a5fe00cef212a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_339.asset using Guid(49fb404f61b07476487a5fe00cef212a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '38156ad6e29d5086717b6f22a43d39e1') in 0.030390506 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000087 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_312.asset
+  artifactKey: Guid(e04bb9da2f1f047bba6ca14540210726) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_312.asset using Guid(e04bb9da2f1f047bba6ca14540210726) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0467812046521a733e603c56abe75d1a') in 0.035179021 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_349.asset
+  artifactKey: Guid(485802a663fd94292978b7944250ec69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_349.asset using Guid(485802a663fd94292978b7944250ec69) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '49efebbc077770a499b339616f6fd3bd') in 0.030845129 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_320.asset
+  artifactKey: Guid(0df491aa6475c434185438c84b6ec690) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_320.asset using Guid(0df491aa6475c434185438c84b6ec690) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9e5612c205d620f4d715b571c9d4f219') in 0.031037474 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_348.asset
+  artifactKey: Guid(940bf5238743d485d8a5e49de7e45c01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_348.asset using Guid(940bf5238743d485d8a5e49de7e45c01) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9464b445319a725e077323bea93b3fd0') in 0.030739974 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000080 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_304.asset
+  artifactKey: Guid(20f2c0da3cedd4ad3a813884b8de2994) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_304.asset using Guid(20f2c0da3cedd4ad3a813884b8de2994) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3449fd77b4130bb5e9e5f51c124be6c5') in 0.030319358 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.010774 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_374.asset
+  artifactKey: Guid(13e06953d029448109723e70840309e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_374.asset using Guid(13e06953d029448109723e70840309e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '939bd490a26d85566a7a69d05835aa33') in 0.033629443 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_384.asset
+  artifactKey: Guid(e9c87cfe137a94b989338bb26c53bf2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_384.asset using Guid(e9c87cfe137a94b989338bb26c53bf2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5b96e6a3e25b4324301a9f479e05d338') in 0.03284378 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000085 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_399.asset
+  artifactKey: Guid(1ca1b22ed767548818ede66d70a2cbcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_399.asset using Guid(1ca1b22ed767548818ede66d70a2cbcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c46062449f1c4e675b299e4a06f7ce07') in 0.035419854 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_407.asset
+  artifactKey: Guid(ff603578d37ee435a83635cfc2767a9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_407.asset using Guid(ff603578d37ee435a83635cfc2767a9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b645d858a30675e1c6cb86220a041cfc') in 0.032577481 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000084 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_376.asset
+  artifactKey: Guid(ad1b902070a7b4801bb0a95ae868fab9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_376.asset using Guid(ad1b902070a7b4801bb0a95ae868fab9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8f6d3ddc99d292b4c814c9e5325dce09') in 0.03780795 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000088 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_430.asset
+  artifactKey: Guid(a71f59ff3c78a47e584f8d1475d44962) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_430.asset using Guid(a71f59ff3c78a47e584f8d1475d44962) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2830c3a78ced8130012c02897b686927') in 0.029523457 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000079 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_422.asset
+  artifactKey: Guid(7f0c1104465a84fa08d98ae799d59907) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_422.asset using Guid(7f0c1104465a84fa08d98ae799d59907) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '18bb7fc389ddd6c8d5719858285d2283') in 0.036499183 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000091 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_379.asset
+  artifactKey: Guid(cc571eb89febf4d68b78777783f64faf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_379.asset using Guid(cc571eb89febf4d68b78777783f64faf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '615de52be2c35fc49fef6560fbe370be') in 0.03307396 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000087 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_392.asset
+  artifactKey: Guid(54e1622ed4f6545b98ee37276791cbca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_392.asset using Guid(54e1622ed4f6545b98ee37276791cbca) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8aa22cd9a1aee50cc09d1cf6ebd34981') in 0.033078566 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000143 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_404.asset
+  artifactKey: Guid(3327da3fcd92b4a388e8e7b906706cd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_404.asset using Guid(3327da3fcd92b4a388e8e7b906706cd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '81e9a8bfef5ab6df43296f56543be169') in 0.035152269 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000072 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_375.asset
+  artifactKey: Guid(7f7850bfc2f264580b35490b03eaac7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_375.asset using Guid(7f7850bfc2f264580b35490b03eaac7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7cc5fc593a6cfd847c77741c37060604') in 0.033688623 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000079 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_405.asset
+  artifactKey: Guid(1444a9926ca1447038d08063ea70529a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_405.asset using Guid(1444a9926ca1447038d08063ea70529a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '697f83ac41f6fc264887329d774e86d3') in 0.029555331 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_440.asset
+  artifactKey: Guid(fda0adf4d3bf94aa896fdb7eedf1c04d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_440.asset using Guid(fda0adf4d3bf94aa896fdb7eedf1c04d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ae9b46e9b51c270b3af2f3b21ead3444') in 0.030057503 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_432.asset
+  artifactKey: Guid(f8bc5e3df8d654d0da8246bf86458cc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_432.asset using Guid(f8bc5e3df8d654d0da8246bf86458cc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f89d2f287d7de261c718332a07bfc1ab') in 0.02994052 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000072 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_441.asset
+  artifactKey: Guid(3402fc7f54cfc415a8d6cac55f7c05ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_441.asset using Guid(3402fc7f54cfc415a8d6cac55f7c05ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd410be3a0beca9de207464f154032641') in 0.031683887 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000074 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_418.asset
+  artifactKey: Guid(0e0ffc333757e4ff4b2df9751eaf9ef3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_418.asset using Guid(0e0ffc333757e4ff4b2df9751eaf9ef3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '003a2834b805ae6179f9f4c2e1808677') in 0.032976743 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000100 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_427.asset
+  artifactKey: Guid(f7d03100bb7664aa09865a9f927cc641) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_427.asset using Guid(f7d03100bb7664aa09865a9f927cc641) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c70cd5729f3fc573bd0c4e75a33d43fb') in 0.029161486 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000075 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_444.asset
+  artifactKey: Guid(bc75e9488608e4786b3a38659bf53818) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_444.asset using Guid(bc75e9488608e4786b3a38659bf53818) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bed16e5a8a2ca01578dd581c043289c6') in 0.029594941 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_411.asset
+  artifactKey: Guid(48ab080f16b4d489c98125b4b65f152b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_411.asset using Guid(48ab080f16b4d489c98125b4b65f152b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6fbc38768eb512813b5b1cfce2be1a99') in 0.029591989 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000072 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_433.asset
+  artifactKey: Guid(ef333b165d84d4d6085b796a0f4e79f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_433.asset using Guid(ef333b165d84d4d6085b796a0f4e79f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a78c4ab1c1969fc6670c7496c68173e7') in 0.028020775 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000074 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_387.asset
+  artifactKey: Guid(ee09abcc1fd824c4eb4d791cfc12cced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_387.asset using Guid(ee09abcc1fd824c4eb4d791cfc12cced) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f4fcd1f8ed2d03f89b5d44569318a82e') in 0.029656669 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000080 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_438.asset
+  artifactKey: Guid(f5472d15d3f9a48deac3af30bd4bf59c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_438.asset using Guid(f5472d15d3f9a48deac3af30bd4bf59c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9fc367c34e5299442de36a25662284dd') in 0.02889967 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000093 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_403.asset
+  artifactKey: Guid(49aebaaf0e29442d4847375e11d80062) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_403.asset using Guid(49aebaaf0e29442d4847375e11d80062) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b1bebc8108decb6e3cf618bfae5642ce') in 0.031008747 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000094 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_420.asset
+  artifactKey: Guid(467b7d365f9734e12b2bd535a9a55d6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_420.asset using Guid(467b7d365f9734e12b2bd535a9a55d6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0a82b8ea64405985e1432fe408c834c7') in 0.031705849 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000093 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_456.asset
+  artifactKey: Guid(671122f5f6d554b1aa37fe9bec1c02e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_456.asset using Guid(671122f5f6d554b1aa37fe9bec1c02e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b47b355c12c6ee3300b52595f9710b22') in 0.029491463 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000111 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_451.asset
+  artifactKey: Guid(5b537f26bdce4472abd0028e55a180db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_451.asset using Guid(5b537f26bdce4472abd0028e55a180db) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9d7a4ab0dd34b1b62f57cc1280e127b7') in 0.028224984 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_452.asset
+  artifactKey: Guid(55be6b7d8844d47f988ba07cbc4cf6e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_452.asset using Guid(55be6b7d8844d47f988ba07cbc4cf6e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fce65974f5a857ed2c30f8712e700133') in 0.030036008 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000082 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_473.asset
+  artifactKey: Guid(45e96ad70bcb44eb7a762ecf086ceb48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_473.asset using Guid(45e96ad70bcb44eb7a762ecf086ceb48) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2a9fad56280fbac399962bd17d0b56c5') in 0.03019716 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000083 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_472.asset
+  artifactKey: Guid(f36d19c3993eb439db184f5fed914361) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_472.asset using Guid(f36d19c3993eb439db184f5fed914361) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '13214d71ee48a3a1bb314dab9c865be3') in 0.031633213 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000076 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_476.asset
+  artifactKey: Guid(51169c646b7084908b3c1802f1c90ac8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_476.asset using Guid(51169c646b7084908b3c1802f1c90ac8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '043355631fe25fc3685162d00e988ed6') in 0.031481537 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000075 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_483.asset
+  artifactKey: Guid(0f12f1e3fceba471e95fccb355346c24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_483.asset using Guid(0f12f1e3fceba471e95fccb355346c24) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '47564e451ce07ad7f233c8e7e1e87701') in 0.031119252 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000087 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_506.asset
+  artifactKey: Guid(6b8ca25a03964426a872c05f7a070ec3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_506.asset using Guid(6b8ca25a03964426a872c05f7a070ec3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2fea5d1eb39e7c3ca3df41a581b419a9') in 0.030064032 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000124 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_505.asset
+  artifactKey: Guid(a3e8eaad33e684d44b42edd57bcf96a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_505.asset using Guid(a3e8eaad33e684d44b42edd57bcf96a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '43b22aa5df595801b05a1d3ef455bb46') in 0.052507996 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_524.asset
+  artifactKey: Guid(ca6510ba20e4f4f7693692586569d014) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_524.asset using Guid(ca6510ba20e4f4f7693692586569d014) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3184ba3b0e80f14cb625c98859af62f3') in 0.030503047 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000091 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_512.asset
+  artifactKey: Guid(fa92c4df9b2504925859400c6ac42a43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_512.asset using Guid(fa92c4df9b2504925859400c6ac42a43) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'eaa0f3e55c842d287ee316a395c2a69b') in 0.030394854 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000109 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_493.asset
+  artifactKey: Guid(3d5ff76953bc447bf8c672046a4b2916) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_493.asset using Guid(3d5ff76953bc447bf8c672046a4b2916) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '76a2ebdd088dd4377d67cd58e44b382a') in 0.029724873 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_515.asset
+  artifactKey: Guid(92d675763a16347349cffd6dfe861545) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_515.asset using Guid(92d675763a16347349cffd6dfe861545) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '29a1f4131986225ab35dff426ebe404b') in 0.029469162 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_509.asset
+  artifactKey: Guid(9b93c273ad6014badaac5df9767bb1e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_509.asset using Guid(9b93c273ad6014badaac5df9767bb1e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '99eddd2805c8db52623e73bdf0682b30') in 0.031857484 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000095 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_517.asset
+  artifactKey: Guid(58104223244da4e8bb9ae10898906b29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_517.asset using Guid(58104223244da4e8bb9ae10898906b29) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f160065d21f92e583bcbf8140c75f71a') in 0.048377348 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_500.asset
+  artifactKey: Guid(421414c357dfe47e685fec1e71787717) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_500.asset using Guid(421414c357dfe47e685fec1e71787717) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '07d3a7bd1d734c6ec1a625afd9e24027') in 0.027882401 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000134 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_501.asset
+  artifactKey: Guid(491fc816b3a124233a56b5f818dd14ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_501.asset using Guid(491fc816b3a124233a56b5f818dd14ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dade5bbe902586823109812baa3dc131') in 0.051618326 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000100 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_470.asset
+  artifactKey: Guid(8ce8fe1af5b504e009ae601f9c1fbb5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_470.asset using Guid(8ce8fe1af5b504e009ae601f9c1fbb5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5bbd9c69cad270fb88d9befb9d2f3426') in 0.030813158 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000088 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_486.asset
+  artifactKey: Guid(9b8d5ebe2d7184c098d2f88154562048) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_486.asset using Guid(9b8d5ebe2d7184c098d2f88154562048) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cce9199341fa4212d7513e28ec1e2ac9') in 0.031331354 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_463.asset
+  artifactKey: Guid(75df8c8320f2e4a1a83c52e339e76b51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_463.asset using Guid(75df8c8320f2e4a1a83c52e339e76b51) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'daa8a19e17d34ea230aa41877672413b') in 0.033257829 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000088 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_450.asset
+  artifactKey: Guid(2e7cd7f889d8c40fb945e4909c7a38b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_450.asset using Guid(2e7cd7f889d8c40fb945e4909c7a38b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ed12ed50f3f51dbe0edcdfa8c492e28a') in 0.033716679 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000084 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_497.asset
+  artifactKey: Guid(9c95a50705e69415d84c708f8cb65b66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_497.asset using Guid(9c95a50705e69415d84c708f8cb65b66) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6c9f68abd39e1b67b565873764c3fdbc') in 0.03007654 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000070 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_528.asset
+  artifactKey: Guid(a120afafcf1f049c9a694df1c979aaa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_528.asset using Guid(a120afafcf1f049c9a694df1c979aaa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ac91f366bcfee617d37bf14666efe504') in 0.031335004 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000092 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_488.asset
+  artifactKey: Guid(a550b8e1da8714803915dc449517a75e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_488.asset using Guid(a550b8e1da8714803915dc449517a75e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2fa3f7dd1ff828b6b731225b8b7bf3cd') in 0.031336999 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000111 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_519.asset
+  artifactKey: Guid(b1f458dbefaa24b2c8bbbf366f157a0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_519.asset using Guid(b1f458dbefaa24b2c8bbbf366f157a0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'eee386501b437600e4306f0efe1f09d9') in 0.031539413 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_447.asset
+  artifactKey: Guid(643d6255004364c9aa475f38eb928bb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_447.asset using Guid(643d6255004364c9aa475f38eb928bb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd281f90710bcfbf5f85bf512cd59866f') in 0.029457774 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_504.asset
+  artifactKey: Guid(8175c6ffdcdf848bf99cc46bffc3fd00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_504.asset using Guid(8175c6ffdcdf848bf99cc46bffc3fd00) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4b49025b8c80fe002fb8a711da226c99') in 0.029887442 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_520.asset
+  artifactKey: Guid(2298028f0d1fd4284bc7ee3206cf2b22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_520.asset using Guid(2298028f0d1fd4284bc7ee3206cf2b22) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '21edb090780c2aee6a708c435eb97618') in 0.03001051 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_461.asset
+  artifactKey: Guid(37079dddd87644a448784107bd24963d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_461.asset using Guid(37079dddd87644a448784107bd24963d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3c613fd5a8f15d21145d1dc097b53643') in 0.029558469 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_435.asset
+  artifactKey: Guid(7a90eb8a6960d42b994b1f96af6ad965) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_435.asset using Guid(7a90eb8a6960d42b994b1f96af6ad965) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0b18340bc05ecef6f37ad0032073c7c5') in 0.036914544 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000074 seconds.
+  path: Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_490.asset
+  artifactKey: Guid(e2c7607f643d246948a1b6ec2026fb20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpriteSheets/kenney_top-down-shooter/Spritesheet/spritesheet_tiles_490.asset using Guid(e2c7607f643d246948a1b6ec2026fb20) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '96a919ccbbcc7b93f4c4273fdd8e30fa') in 0.039188812 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
