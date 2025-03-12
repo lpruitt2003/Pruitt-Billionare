@@ -134,6 +134,7 @@ MonoBehaviour:
   maxSpeed: 10
   decelerationDistance: 3
   pushForce: 10
+  basePrefab: {fileID: 7197677232449257846, guid: 69c19e44f85a349d0bed408a1ebcaeb7, type: 3}
 --- !u!58 &-5991393217418981932
 CircleCollider2D:
   m_ObjectHideFlags: 0

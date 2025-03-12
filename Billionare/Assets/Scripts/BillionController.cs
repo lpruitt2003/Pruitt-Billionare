@@ -3,12 +3,18 @@ using UnityEngine;
 
 public class BillionController : MonoBehaviour
 {
-    public string billionColor; // "Green" or "Yellow"
+    public string billionColor; // "Green", "Yellow", "Red", "Blue"
     
     public float acceleration = 5f;
     public float maxSpeed = 10f;
     public float decelerationDistance = 3f;
     public float pushForce = 2f;
+    
+    public float maxHealth = 100f;
+    private float currentHealth;
+
+    public GameObject basePrefab;
+    public GameObject innerHealthCircle; // Assign this in the Inspector
 
     private Rigidbody2D rb;
     private Dictionary<string, List<GameObject>> flags;
@@ -16,13 +22,13 @@ public class BillionController : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        currentHealth = maxHealth;
 
         if (rb == null)
         {
             Debug.LogError("Rigidbody2D not found on Billion!");
         }
 
-        // Get the FlagPlacement instance in the scene
         FlagPlacement flagPlacement = FindObjectOfType<FlagPlacement>();
 
         if (flagPlacement != null)
@@ -33,13 +39,22 @@ public class BillionController : MonoBehaviour
         {
             Debug.LogError("FlagPlacement not found in scene!");
         }
+
+        UpdateHealthDisplay();
     }
 
     private void FixedUpdate()
     {
-        if (!string.IsNullOrEmpty(billionColor))
+        if (flags == null || flags.Count == 0)
+            return;
+
+        if (flags.ContainsKey(billionColor) && flags[billionColor].Count > 0)
         {
-            MoveToFlag(billionColor); // Only move towards the correct flag color
+            MoveToFlag(billionColor);
+        }
+        else
+        {
+            MoveToBase();
         }
     }
 
@@ -56,11 +71,9 @@ public class BillionController : MonoBehaviour
         float distance = direction.magnitude;
         direction.Normalize();
 
-        // Apply acceleration smoothly
         float speedFactor = Mathf.Clamp01(distance / decelerationDistance);
-        float targetSpeed = maxSpeed * speedFactor; // Decelerates as it nears the flag
+        float targetSpeed = maxSpeed * speedFactor; 
 
-        // Instead of adding force every frame, directly adjust velocity
         Vector2 desiredVelocity = direction * targetSpeed;
         rb.linearVelocity = Vector2.Lerp(rb.linearVelocity, desiredVelocity, Time.fixedDeltaTime * acceleration);
     }
@@ -81,5 +94,56 @@ public class BillionController : MonoBehaviour
         }
 
         return nearestFlag;
+    }
+
+    private void MoveToBase()
+    {
+        if (basePrefab == null)
+            return;
+
+        Vector2 direction = (basePrefab.transform.position - transform.position);
+        float distance = direction.magnitude;
+        direction.Normalize();
+
+        float speedFactor = Mathf.Clamp01(distance / decelerationDistance);
+        float targetSpeed = maxSpeed * speedFactor; 
+
+        Vector2 desiredVelocity = direction * targetSpeed;
+        rb.linearVelocity = Vector2.Lerp(rb.linearVelocity, desiredVelocity, Time.fixedDeltaTime * acceleration);
+    }
+
+    private void OnMouseDown() // Left-click for damage
+    {
+        TakeDamage(20f);
+    }
+
+    private void OnMouseOver()
+    {
+        if (Input.GetMouseButtonDown(2)) // Middle-click for damage
+        {
+            TakeDamage(20f);
+        }
+    }
+
+    public void TakeDamage(float damage)
+    {
+        currentHealth -= damage;
+        UpdateHealthDisplay();
+
+        if (currentHealth <= 0)
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    private void UpdateHealthDisplay()
+    {
+        if (innerHealthCircle == null) return;
+
+        float healthRatio = currentHealth / maxHealth;
+        float minSize = 0.3f; // Minimum inner circle size (30% of max size)
+        float sizeRatio = Mathf.Lerp(minSize, 1f, healthRatio);
+
+        innerHealthCircle.transform.localScale = new Vector3(sizeRatio, sizeRatio, 1f);
     }
 }

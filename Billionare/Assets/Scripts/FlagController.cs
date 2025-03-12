@@ -3,6 +3,8 @@ using System.Collections.Generic;
 
 public class FlagPlacement : MonoBehaviour
 {
+    public GameObject blueFlag; // Assign a flag prefab in the inspector
+    public GameObject redFlag; // Assign a flag prefab in the inspector
     public GameObject yellowFlag; // Assign a flag prefab in the inspector
     public GameObject greenFlag; // Assign a flag prefab in the inspector
     public Camera mainCamera;
@@ -11,7 +13,9 @@ public class FlagPlacement : MonoBehaviour
     public Dictionary<string, List<GameObject>> flags = new Dictionary<string, List<GameObject>>()
     {
         { "Green", new List<GameObject>() },
-        { "Yellow", new List<GameObject>() }
+        { "Yellow", new List<GameObject>() },
+        { "Red", new List<GameObject>() },
+        { "Blue", new List<GameObject>() }
     };
 
     private GameObject selectedFlag = null;
