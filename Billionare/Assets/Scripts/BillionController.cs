@@ -43,7 +43,7 @@ public class BillionController : MonoBehaviour
         UpdateHealthDisplay();
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
         if (flags == null || flags.Count == 0)
             return;
@@ -56,6 +56,8 @@ public class BillionController : MonoBehaviour
         {
             MoveToBase();
         }
+
+        TargetBillion();
     }
 
     private void MoveToFlag(string color)
@@ -145,5 +147,40 @@ public class BillionController : MonoBehaviour
         float sizeRatio = Mathf.Lerp(minSize, 1f, healthRatio);
 
         innerHealthCircle.transform.localScale = new Vector3(sizeRatio, sizeRatio, 1f);
+    }
+
+    //billions will turn to face the closest billion of a different color
+    private void TargetBillion()
+    {
+        GameObject closestEnemyBillion = null;
+        float minDistance = Mathf.Infinity;
+
+        // Find all billions in the scene
+        GameObject[] allBillions = GameObject.FindGameObjectsWithTag("Billion");
+
+        foreach (GameObject billion in allBillions)
+        {
+            if (billion == gameObject) continue; // Skip self
+
+            BillionController bc = billion.GetComponent<BillionController>();
+            if (bc == null || bc.billionColor == billionColor) continue; // Skip same-color billions
+
+            // Calculate distance
+            float distance = Vector2.Distance(billion.transform.position, transform.position);
+            if (distance < minDistance)
+            {
+                minDistance = distance;
+                closestEnemyBillion = billion;
+            }
+        }
+
+        // Rotate towards the closest enemy billion
+        if (closestEnemyBillion != null)
+        {
+            Vector2 direction = (closestEnemyBillion.transform.position - transform.position).normalized;
+            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg - 90f;
+            Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+            transform.rotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * 5f);
+        }
     }
 }
