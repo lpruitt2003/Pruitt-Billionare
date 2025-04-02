@@ -440,6 +440,7 @@
 -analyzer:"/Applications/Unity/Hub/Editor/6000.0.36f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
 "Assets/Scripts/BaseController.cs"
 "Assets/Scripts/BillionController.cs"
+"Assets/Scripts/BlasterShotController.cs"
 "Assets/Scripts/FlagController.cs"
 "Assets/TutorialInfo/Scripts/Readme.cs"
 -langversion:9.0

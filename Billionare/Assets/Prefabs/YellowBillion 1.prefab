@@ -131,13 +131,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   billionColor: Yellow
-  acceleration: 3
-  maxSpeed: 6
+  acceleration: 2
+  maxSpeed: 3
   decelerationDistance: 2
   pushForce: 10
   maxHealth: 100
   basePrefab: {fileID: 7439854401867639729, guid: 3400f83655c684d7bb2949f458323c67, type: 3}
   innerHealthCircle: {fileID: 0}
+  blasterShotPrefab: {fileID: 6220438559581166426, guid: de300f8effda641398eddb93acc58acc, type: 3}
 --- !u!58 &-4110606506090077532
 CircleCollider2D:
   m_ObjectHideFlags: 0

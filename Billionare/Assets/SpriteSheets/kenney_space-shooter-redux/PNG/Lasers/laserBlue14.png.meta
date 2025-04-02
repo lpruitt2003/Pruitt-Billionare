@@ -116,12 +116,12 @@ TextureImporter:
       name: laserBlue14_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 13
-        height: 57
+        x: 3
+        y: 5
+        width: 7
+        height: 47
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 26b0950c3f2d946969a6821fd043b947
     internalID: 0
     vertices: []
     indices: 
@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      laserBlue14_0: 8379008776410523348
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3099410846205945221}
   - component: {fileID: 8020365729494873126}
   - component: {fileID: 1368284297198577030}
-  - component: {fileID: 113981309692741237}
+  - component: {fileID: 2135672478873802822}
   m_Layer: 0
   m_Name: RedBillion
   m_TagString: Billion
@@ -154,7 +154,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &113981309692741237
+--- !u!114 &2135672478873802822
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -167,13 +167,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   billionColor: Red
-  acceleration: 3
-  maxSpeed: 6
+  acceleration: 2
+  maxSpeed: 3
   decelerationDistance: 2
-  pushForce: 2
+  pushForce: 10
   maxHealth: 100
   basePrefab: {fileID: 6617576750151026002, guid: a547c1f627a154978bb66382d41eece0, type: 3}
   innerHealthCircle: {fileID: 0}
+  blasterShotPrefab: {fileID: 7439252016526531699, guid: 95452d5374141493698f6096f9b02b91, type: 3}
 --- !u!1 &4500431337860781519
 GameObject:
   m_ObjectHideFlags: 0

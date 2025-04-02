@@ -9,12 +9,14 @@ public class BillionController : MonoBehaviour
     public float maxSpeed = 10f;
     public float decelerationDistance = 3f;
     public float pushForce = 2f;
+    private float lastFireTime = 0f;
     
     public float maxHealth = 100f;
     private float currentHealth;
 
     public GameObject basePrefab;
     public GameObject innerHealthCircle; // Assign this in the Inspector
+    public GameObject blasterShotPrefab; // Assign this in the Inspector
 
     private Rigidbody2D rb;
     private Dictionary<string, List<GameObject>> flags;
@@ -172,6 +174,17 @@ public class BillionController : MonoBehaviour
                 minDistance = distance;
                 closestEnemyBillion = billion;
             }
+
+            // Check if the billion is within a certain range
+            // If so, fire a blaster shot
+            if (distance < 4f)
+            {
+                if (Time.time - lastFireTime >= 2f)
+                {
+                    SpawnBlasterShot();
+                    lastFireTime = Time.time;
+                }
+            }
         }
 
         // Rotate towards the closest enemy billion
@@ -183,4 +196,14 @@ public class BillionController : MonoBehaviour
             transform.rotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * 5f);
         }
     }
+
+    private void SpawnBlasterShot()
+    {
+        GameObject blasterShot = Instantiate(blasterShotPrefab, transform.position, transform.rotation);
+        BlasterShotController blasterShotController = blasterShot.GetComponent<BlasterShotController>();
+        if (blasterShotController != null)
+        {
+            blasterShotController.billionColor = billionColor;
+        }
+    }    
 }
