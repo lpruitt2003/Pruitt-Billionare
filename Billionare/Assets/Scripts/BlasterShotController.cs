@@ -26,12 +26,19 @@ public class BlasterShotController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Billion"))
+        if (other.CompareTag("Billion") || other.CompareTag("Base"))
         {
             BillionController otherBillion = other.GetComponent<BillionController>();
+            BaseController otherBase = other.GetComponent<BaseController>();
             if (otherBillion != null && otherBillion.billionColor == billionColor)
             {
                 // Ignore collision with the same color billion
+                return;
+            }
+
+            if (otherBase != null && otherBase.billionColor == billionColor)
+            {
+                // Ignore collision with the same color base
                 return;
             }
 
