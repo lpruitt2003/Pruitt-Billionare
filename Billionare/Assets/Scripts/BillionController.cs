@@ -59,7 +59,7 @@ public class BillionController : MonoBehaviour
             MoveToBase();
         }
 
-        TargetBillion();
+        TargetEnemy();
     }
 
     private void MoveToFlag(string color)
@@ -116,11 +116,6 @@ public class BillionController : MonoBehaviour
         rb.linearVelocity = Vector2.Lerp(rb.linearVelocity, desiredVelocity, Time.fixedDeltaTime * acceleration);
     }
 
-    private void OnMouseDown() // Left-click for damage
-    {
-        TakeDamage(20f);
-    }
-
     private void OnMouseOver()
     {
         if (Input.GetMouseButtonDown(2)) // Middle-click for damage
@@ -151,50 +146,54 @@ public class BillionController : MonoBehaviour
         innerHealthCircle.transform.localScale = new Vector3(sizeRatio, sizeRatio, 1f);
     }
 
-    //billions will turn to face the closest billion of a different color
-    private void TargetBillion()
+    //billions will turn to face the closest billion or base of a different color
+    private void TargetEnemy()
     {
-        GameObject closestEnemyBillion = null;
+        GameObject closestEnemy = null;
         float minDistance = Mathf.Infinity;
 
         // Find all billions in the scene
         GameObject[] allBillions = GameObject.FindGameObjectsWithTag("Billion");
+        // Find all bases in the scene
+        GameObject[] allBases = GameObject.FindGameObjectsWithTag("Base");
+        // Combine all bases and billions into one array
+        GameObject[] allEnemies = new GameObject[allBillions.Length + allBases.Length];
+        allBillions.CopyTo(allEnemies, 0);
+        allBases.CopyTo(allEnemies, allBillions.Length);
 
-        foreach (GameObject billion in allBillions)
+        foreach (GameObject enemy in allEnemies)
         {
-            if (billion == gameObject) continue; // Skip self
+            if (enemy == gameObject) continue; // Skip self
 
-            BillionController bc = billion.GetComponent<BillionController>();
-            if (bc == null || bc.billionColor == billionColor) continue; // Skip same-color billions
+            BillionController bc = enemy.GetComponent<BillionController>();
+            BaseController baseController = enemy.GetComponent<BaseController>();
+
+            if (bc != null && bc.billionColor == billionColor) continue; // Skip same-color billions
+            if (baseController != null && baseController.billionColor == billionColor) continue; // Skip same-color bases
 
             // Calculate distance
-            float distance = Vector2.Distance(billion.transform.position, transform.position);
+            float distance = Vector2.Distance(enemy.transform.position, transform.position);
             if (distance < minDistance)
             {
                 minDistance = distance;
-                closestEnemyBillion = billion;
-            }
-
-            // Check if the billion is within a certain range
-            // If so, fire a blaster shot
-            if (distance < 4f)
-            {
-                if (Time.time - lastFireTime >= 2f)
-                {
-                    SpawnBlasterShot();
-                    lastFireTime = Time.time;
-                }
+                closestEnemy = enemy;
             }
         }
 
-        // Rotate towards the closest enemy billion
-        if (closestEnemyBillion != null)
+        // Rotate towards the closest enemy immediately
+        if (closestEnemy != null)
         {
-            Vector2 direction = (closestEnemyBillion.transform.position - transform.position).normalized;
-            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg - 90f;
-            Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.forward);
-            transform.rotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * 5f);
-        }
+            Vector2 direction = (closestEnemy.transform.position - transform.position).normalized;
+            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+            transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle - 90f));
+
+            // Fire blaster shot if within range
+            if (minDistance < 4f && Time.time - lastFireTime >= 2f)
+            {
+                SpawnBlasterShot();
+                lastFireTime = Time.time;
+            }
+        }   
     }
 
     private void SpawnBlasterShot()

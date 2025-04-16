@@ -26,28 +26,27 @@ public class BlasterShotController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Billion") || other.CompareTag("Base"))
+        if (other.CompareTag("Billion"))
         {
-            BillionController otherBillion = other.GetComponent<BillionController>();
-            BaseController otherBase = other.GetComponent<BaseController>();
-            if (otherBillion != null && otherBillion.billionColor == billionColor)
+            BillionController billion = other.GetComponent<BillionController>();
+            if (billion != null && billion.billionColor != billionColor)
             {
-                // Ignore collision with the same color billion
-                return;
+                billion.TakeDamage(damage);
+                Destroy(gameObject);
             }
-
-            if (otherBase != null && otherBase.billionColor == billionColor)
+        }
+        else if (other.CompareTag("Base"))
+        {
+            BaseController baseController = other.GetComponent<BaseController>();
+            if (baseController != null && baseController.billionColor != billionColor)
             {
-                // Ignore collision with the same color base
-                return;
+                baseController.TakeDamage(damage);
+                Destroy(gameObject);
             }
-
-            // Deal damage to the billion
-            otherBillion.TakeDamage(damage);
-            Destroy(gameObject);
         }
         else
         {
+            // Destroy the blaster shot if it hits anything else
             Destroy(gameObject);
         }
     }

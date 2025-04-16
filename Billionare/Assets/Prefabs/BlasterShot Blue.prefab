@@ -175,8 +175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd070e4212fc422ea1b9b74a8dcad3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  billion: {fileID: 0}
-  speed: 2
+  speed: 4
   damage: 20
   lifetime: 5
   billionColor: Blue

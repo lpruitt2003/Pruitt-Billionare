@@ -10,17 +10,48 @@ public class BaseController : MonoBehaviour
     public float spawnDistance = 1.5f;
     private float lastFireTime = 0f;
     public float safeSpawnHeight = 1f; // Adjust if needed
+    public float maxHealth = 500f;
+    private float currentHealth;
+    private Rigidbody2D rb;
     public string billionColor; // "Green", "Yellow", "Red", "Blue"
     public GameObject blasterShotPrefab; // Assign this in the Inspector
 
+    [SerializeField] private float radius = 1f;
+    [SerializeField] private int segments = 100;
+
+    private LineRenderer lineRenderer;
+
+
     private void Start()
     {
+        lineRenderer = GetComponent<LineRenderer>();
+        Material mat = new Material(Shader.Find("Sprites/Default"));
+        lineRenderer.material = mat;
+        lineRenderer.useWorldSpace = false;
+        lineRenderer.loop = false;
+        lineRenderer.widthMultiplier = 0.1f;
+        lineRenderer.positionCount = segments + 1;
+
+        // Get sprite size and calculate radius
+        SpriteRenderer spriteRenderer = GetComponentInParent<SpriteRenderer>();
+        if (spriteRenderer != null)
+        {
+            float spriteWidth = spriteRenderer.bounds.size.x;
+            float spriteHeight = spriteRenderer.bounds.size.y;
+            float spriteMax = Mathf.Max(spriteWidth, spriteHeight);
+
+            radius = spriteMax * 0.55f; // Slightly larger than sprite edge
+        }
+        rb = GetComponent<Rigidbody2D>();
+        currentHealth = maxHealth;
         StartCoroutine(SpawnCharacter());
+        UpdateHealthDisplay();
     }
 
     private void Update()
     {
         TargetBillion();
+        drawHealthBar();
     }
 
     private IEnumerator SpawnCharacter()
@@ -39,6 +70,23 @@ public class BaseController : MonoBehaviour
 
             yield return new WaitForSeconds(5f);
         }
+    }
+
+    public void TakeDamage(float damage)
+    {
+        currentHealth -= damage;
+        UpdateHealthDisplay();
+
+        if (currentHealth <= 0)
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    private void UpdateHealthDisplay()
+    {
+        // Update the health display here
+        float healthRatio = currentHealth / maxHealth;
     }
 
     //rotate turret at a constant rate towards the nearest billion
@@ -96,4 +144,26 @@ public class BaseController : MonoBehaviour
             blasterShotController.billionColor = billionColor;
         }
     }
+
+    private void drawHealthBar()
+    {
+        if (lineRenderer == null) return;
+
+        float healthPercent = Mathf.Clamp01(currentHealth / maxHealth);
+        int visibleSegments = Mathf.RoundToInt(segments * healthPercent);
+
+        lineRenderer.positionCount = visibleSegments + 1;
+        lineRenderer.startColor = Color.green;
+        lineRenderer.endColor = Color.green;
+        float angleStep = 360f / segments;
+        float angle = 0f;
+
+        for (int i = 0; i <= visibleSegments; i++)
+        {
+            float x = Mathf.Cos(Mathf.Deg2Rad * angle) * radius;
+            float y = Mathf.Sin(Mathf.Deg2Rad * angle) * radius;
+            lineRenderer.SetPosition(i, new Vector3(x, y, 0));
+            angle += angleStep;
+        }
+    }   
 }
