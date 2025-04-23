@@ -15,12 +15,13 @@ public class BaseController : MonoBehaviour
     private Rigidbody2D rb;
     public string billionColor; // "Green", "Yellow", "Red", "Blue"
     public GameObject blasterShotPrefab; // Assign this in the Inspector
-
+    
+    public GameObject ExpPrefab; // Assign this in the Inspector
     [SerializeField] private float radius = 1f;
     [SerializeField] private int segments = 100;
 
     private LineRenderer lineRenderer;
-
+    
 
     private void Start()
     {
@@ -75,7 +76,6 @@ public class BaseController : MonoBehaviour
     public void TakeDamage(float damage)
     {
         currentHealth -= damage;
-        UpdateHealthDisplay();
 
         if (currentHealth <= 0)
         {
@@ -165,5 +165,15 @@ public class BaseController : MonoBehaviour
             lineRenderer.SetPosition(i, new Vector3(x, y, 0));
             angle += angleStep;
         }
-    }   
+    }
+
+    public void HandleExp(string Color)
+    {
+        if (Color == billionColor)
+        {
+            Debug.Log("Experience given to base: " + billionColor);
+            ExpController expController = ExpPrefab.GetComponent<ExpController>();
+            expController.updateExp(billionColor); // Update experience
+        }
+    }
 }

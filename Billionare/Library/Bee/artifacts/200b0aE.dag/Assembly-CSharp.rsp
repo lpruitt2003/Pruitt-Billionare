@@ -441,6 +441,7 @@
 "Assets/Scripts/BaseController.cs"
 "Assets/Scripts/BillionController.cs"
 "Assets/Scripts/BlasterShotController.cs"
+"Assets/Scripts/ExpController.cs"
 "Assets/Scripts/FlagController.cs"
 "Assets/TutorialInfo/Scripts/Readme.cs"
 -langversion:9.0

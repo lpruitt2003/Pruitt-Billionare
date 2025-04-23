@@ -116,21 +116,22 @@ public class BillionController : MonoBehaviour
         rb.linearVelocity = Vector2.Lerp(rb.linearVelocity, desiredVelocity, Time.fixedDeltaTime * acceleration);
     }
 
-    private void OnMouseOver()
-    {
-        if (Input.GetMouseButtonDown(2)) // Middle-click for damage
-        {
-            TakeDamage(20f);
-        }
-    }
-
-    public void TakeDamage(float damage)
+    public void TakeDamage(float damage, string Color)
     {
         currentHealth -= damage;
         UpdateHealthDisplay();
-
         if (currentHealth <= 0)
         {
+            //find all bases
+            GameObject[] allBases = GameObject.FindGameObjectsWithTag("Base");
+            foreach (GameObject baseObj in allBases)
+            {
+                BaseController baseController = baseObj.GetComponent<BaseController>();
+                if (baseController != null && baseController.billionColor == Color)
+                {
+                    baseController.HandleExp(billionColor);
+                }
+            }
             Destroy(gameObject);
         }
     }
@@ -204,5 +205,5 @@ public class BillionController : MonoBehaviour
         {
             blasterShotController.billionColor = billionColor;
         }
-    }    
+    }      
 }

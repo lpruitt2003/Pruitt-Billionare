@@ -6,9 +6,7 @@ public class BlasterShotController : MonoBehaviour
     public float speed = 2f;
     public float damage = 20f;
     public float lifetime = 5f;
-
     public string billionColor; // "Green", "Yellow", "Red", "Blue"
-
     private Rigidbody2D rb;
 
     private void Start()
@@ -31,7 +29,7 @@ public class BlasterShotController : MonoBehaviour
             BillionController billion = other.GetComponent<BillionController>();
             if (billion != null && billion.billionColor != billionColor)
             {
-                billion.TakeDamage(damage);
+                billion.TakeDamage(damage, billionColor);
                 Destroy(gameObject);
             }
         }
