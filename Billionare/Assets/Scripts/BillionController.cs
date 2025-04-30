@@ -108,12 +108,14 @@ public class BillionController : MonoBehaviour
         Vector2 direction = (basePrefab.transform.position - transform.position);
         float distance = direction.magnitude;
         direction.Normalize();
-
         float speedFactor = Mathf.Clamp01(distance / decelerationDistance);
-        float targetSpeed = maxSpeed * speedFactor; 
-
+        float targetSpeed = maxSpeed * speedFactor;
         Vector2 desiredVelocity = direction * targetSpeed;
         rb.linearVelocity = Vector2.Lerp(rb.linearVelocity, desiredVelocity, Time.fixedDeltaTime * acceleration);
+        if (distance < decelerationDistance)
+        {
+            rb.linearVelocity = Vector2.zero; // Stop moving when close to the base
+        }
     }
 
     public void TakeDamage(float damage, string Color)
